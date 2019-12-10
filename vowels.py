@@ -44,7 +44,7 @@ def classify(labeled, labels, kmeans=None):
         kmeans    a trained k-means model (from exercise 1)
     """
     ### 4.2 Classification
-    f = open('f1score.txt', 'a+')
+    
     log = LogisticRegression(random_state=17, C=1, class_weight='balanced', penalty='l1')
     clf = log
 
